@@ -5,7 +5,7 @@ import time
 
 amount = 100 #Hoeveelheid pogingen per leter in alphabet
 alphabet = "abcdefghijklmnopqrstuvwxyz1234567890" #elke character die geprobeerd moet worden
-studentcode = '000' #code van de student die je wilt kraken (username)
+studentcode = '000000' #code van de student die je wilt kraken (username)
 
 def Dict_Create():
     """
@@ -90,7 +90,7 @@ async def client_connect(username, password):
         reply -- string of server's response to login attempt
     """
     
-    server_address = "ws://172.17.0.2:3840"
+    server_address = "ws://192.168.1.10:3840"
     err_count=0
     while True:
         try:
